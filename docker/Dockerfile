@@ -3,7 +3,7 @@ MAINTAINER SD Elements
 
 ENV PKG_JSON_URL=https://raw.githubusercontent.com/sdelements/lets-chat/master/package.json \
     TAR_GZ_URL=https://github.com/sdelements/lets-chat/archive/master.tar.gz \
-    BUILD_DEPS='g++ gcc git make python' \
+    BUILD_DEPS='g++ gcc git make python curl' \
     LCB_PLUGINS='lets-chat-ldap lets-chat-s3'
 
 RUN mkdir -p /usr/src/app
