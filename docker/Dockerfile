@@ -13,7 +13,7 @@ ADD $PKG_JSON_URL ./package.json
 
 RUN set -x \
 &&  apt-get update \
-&&  apt-get install -y $BUILD_DEPS --no-install-recommends \
+&&  apt-get install -y  $BUILD_DEPS  --no-install-recommends \
 &&  rm -rf /var/lib/apt/lists/* \
 &&  npm install --production \
 &&  npm install $LCB_PLUGINS \
