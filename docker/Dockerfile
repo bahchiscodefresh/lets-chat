@@ -30,7 +30,8 @@ RUN tar -xzvf master.tar.gz \
 
 RUN groupadd -r node \
 &&  useradd -r -g node node \
-&& mkdir -p /home/node/.ssh \
+&&  mkdir -p /home/node/.ssh \
+&&  chown -R node:node /home/node/.ssh \
 &&  chown node:node uploads
 
 ENV LCB_DATABASE_URI=mongodb://mongo/letschat \
