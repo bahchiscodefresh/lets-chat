@@ -21,7 +21,7 @@ RUN set -x \
 &&  rm -rf /tmp/npm* \
 &&  apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $BUILD_DEPS
 
-RUN apt-get intsall curl
+RUN apt-get install curl
 
 RUN rm -rf /var/lib/apt/lists/*
 
