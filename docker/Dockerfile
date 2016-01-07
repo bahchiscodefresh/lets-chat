@@ -40,8 +40,6 @@ ENV LCB_DATABASE_URI=mongodb://mongo/letschat \
     LCB_XMPP_ENABLE=true \
     LCB_XMPP_PORT=5222
 
-USER node
-
 EXPOSE 8080 5222
 
 VOLUME ["/usr/src/app/config"]
